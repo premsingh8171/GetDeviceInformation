@@ -34,7 +34,7 @@
                 app:tabMode="scrollable"
                 app:tabSelectedTextColor="@android:color/white"
                 app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
-                app:tabTextColor="#a4aedc" />
+                app:tabTextColor="#000000" />
 
         </com.google.android.material.appbar.AppBarLayout>
 

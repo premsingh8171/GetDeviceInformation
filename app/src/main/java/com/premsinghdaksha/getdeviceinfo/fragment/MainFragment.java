@@ -94,6 +94,7 @@ public class MainFragment extends Fragment implements AdInfo.AdIdCallback, Permi
         return view;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     public void onResume() {
         super.onResume();

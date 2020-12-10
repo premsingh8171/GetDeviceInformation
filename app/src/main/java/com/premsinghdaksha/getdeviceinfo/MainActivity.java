@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setOffscreenPageLimit(0);
 
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addTitle("Location");
-        adapter.addTitle("App");
+        adapter.addTitle("Current Location");
+        adapter.addTitle("App info");
         adapter.addTitle("Ads");
-        adapter.addTitle("Battery");
+        adapter.addTitle("Battery info");
         adapter.addTitle("Device");
-        adapter.addTitle("Memory");
-        adapter.addTitle("Network");
-        adapter.addTitle("Installed Apps");
-        adapter.addTitle("Contacts");
+        adapter.addTitle("Memory info");
+        adapter.addTitle("Network info");
+        adapter.addTitle("Installed Apps info");
+        adapter.addTitle("Contacts List");
         viewPager.setAdapter(adapter);
 
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
