@@ -2,7 +2,8 @@
 
 device information like your current location, aboutUs, ads, battery, device, memory, Network, Installation app in your device and contact list etc.
 
-<img src="https://raw.githubusercontent.com/premsingh8171/GetDeviceInformation/master/app/src/main/res/drawable/device1.jpeg" alt="API" data-canonical-src="https://raw.githubusercontent.com/premsingh8171/GetDeviceInformation/master/app/src/main/res/drawable/device2.jpeg?style=flat" style="max-width:100%;">
+<img src="https://raw.githubusercontent.com/premsingh8171/GetDeviceInformation/master/app/src/main/res/drawable/device1.jpeg" width="300" height="550" /><img src="https://raw.githubusercontent.com/premsingh8171/GetDeviceInformation/master/app/src/main/res/drawable/device2.jpeg" width="300" height="550" />
+
 
 
 <h2>How to integrate the library in your app?</h2>
