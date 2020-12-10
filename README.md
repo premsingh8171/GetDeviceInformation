@@ -11,7 +11,8 @@ device information like your current location, aboutUs, ads, battery, device, me
 
 ```gradle
 dependencies {
-	        implementation 'com.github.premsingh8171:GetDeviceInformation:1.0.0'
+
+	 implementation 'com.github.premsingh8171:GetDeviceInformation:1.0.0'
 }
 ```
 
@@ -19,7 +20,7 @@ dependencies {
 ```gradle
 allprojects {
 		repositories {
-			...
+			
 			maven { url 'https://jitpack.io' }
 		}
 	}
