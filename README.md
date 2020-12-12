@@ -7,7 +7,7 @@ device information like your current location, aboutUs, ads, battery, device, me
 
 
 <h2>How to integrate the library in your app?</h2>
-<b>Gradle Dependecy</b></br>
+<b>Gradle dependency</b></br>
 
 ```gradle
 dependencies {
@@ -16,7 +16,7 @@ dependencies {
 }
 ```
 
-<b>Dependecy</b></br>
+<b>Dependency</b></br>
 ```gradle
 allprojects {
 		repositories {
