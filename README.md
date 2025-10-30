@@ -11,16 +11,16 @@ device information like your current location, aboutUs, ads, battery, device, me
 
 ```gradle
 dependencies {
-
-	 implementation 'com.github.premsingh8171:GetDeviceInformation:1.0.0'
-}
+	        implementation 'com.github.premsingh8171:GetDeviceInformation:2.0.0'
+	}
 ```
 
 <b>Dependency</b></br>
 ```gradle
-allprojects {
+dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 		repositories {
-			
+			mavenCentral()
 			maven { url 'https://jitpack.io' }
 		}
 	}
