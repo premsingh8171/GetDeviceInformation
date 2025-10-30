@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.premsinghdaksha.getdeviceinfo"
     tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,6 +13,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BIND_MIDI_DEVICE_SERVICE"
         tools:ignore="ProtectedPermissions" />
+    <!-- Or for newer Android versions -->
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
 
     <uses-permission
         android:name="android.permission.BATTERY_STATS"
@@ -26,10 +27,11 @@
         android:roundIcon="@mipmap/deviceinfo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GetDeviceInfo">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

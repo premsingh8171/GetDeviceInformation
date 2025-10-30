@@ -11,6 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.premsinghdaksha.getdeviceinfo.adapter.ViewPagerAdapter;
+import com.premsinghdaksha.getdeviceinfo.permission.PhoneNumberHelper;
 
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
 
     private ViewPagerAdapter adapter;
+    private PhoneNumberHelper phoneNumberHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        phoneNumberHelper = new PhoneNumberHelper(this);
+        phoneNumberHelper.checkAndRequestPermissions();
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         viewPager.setOffscreenPageLimit(0);
@@ -43,5 +48,11 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        phoneNumberHelper.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 }

@@ -11,6 +11,7 @@ import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -164,6 +165,7 @@ public class MainFragment extends Fragment implements AdInfo.AdIdCallback, Permi
                         break;
                     case 6: //call network
                         Network network = new Network(mActivity);
+                        //Log.d("Network Info", network.toString());
                         adapter = new CustomListAdapter(mActivity, network);
                         break;
                     case 7: //call installed apps
